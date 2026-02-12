@@ -1,21 +1,29 @@
-# --- EXCEL ---
-# Ignorar archivos temporales que crea Excel al abrirse
-~$*.xlsx
-~$*.xls
-
-# --- POWER BI ---
-# Ignorar copias de seguridad y archivos temporales de Power BI
-*.tmp
-*.pbit
-*.pbix.xml
-
-# --- BASES DE DATOS ---
-# Ignorar archivos de configuración de XAMPP o logs de SQL
-*.log
-config.php-local
-.env
-
-# --- SISTEMA ---
-# Archivos basura de Windows
+# --- Extensiones de sistema ---
+.DS_Store
 Thumbs.db
-Desktop.ini
+
+# --- Julia ---
+# Ignorar archivos de compilación y entorno si no son necesarios
+*.jl.cov
+*.jl.mem
+
+# --- R Language ---
+.Rhistory
+.RData
+.Ruserdata
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+venv/
+
+# --- Datos y SQL ---
+# Ignorar bases de datos locales pesadas
+*.sqlite
+*.sql
+*.csv
+*.xlsx
+
+# --- Editores ---
+.vscode/
+.idea/
