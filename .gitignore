@@ -1,0 +1,21 @@
+# --- EXCEL ---
+# Ignorar archivos temporales que crea Excel al abrirse
+~$*.xlsx
+~$*.xls
+
+# --- POWER BI ---
+# Ignorar copias de seguridad y archivos temporales de Power BI
+*.tmp
+*.pbit
+*.pbix.xml
+
+# --- BASES DE DATOS ---
+# Ignorar archivos de configuración de XAMPP o logs de SQL
+*.log
+config.php-local
+.env
+
+# --- SISTEMA ---
+# Archivos basura de Windows
+Thumbs.db
+Desktop.ini
